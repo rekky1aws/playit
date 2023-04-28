@@ -6,7 +6,7 @@
 
 
 
-## English
+## :gb: :us: English
 
 ### Index 
 
@@ -31,7 +31,7 @@ Playit is a web music manager that can be used with the majority of the popular 
 
 
 
-## Français
+## :fr: Français
 
 ### Index 
 
