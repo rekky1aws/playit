@@ -2,11 +2,18 @@
 
 namespace App;
 
+define('DEBUG', true);
+
 include_once("./controller/autoload.php");
 
-// use App\Head;
+use App\Components\Head;
+use App\Components\Header;
+use App\Components\Footer;
 
-// $head = new Head();
+
+$head = new Head();
+$header = new Header();
+$footer = new Footer();
 
 ?>
 
@@ -15,13 +22,12 @@ include_once("./controller/autoload.php");
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="/style/main.css">
-	<script type="text/javascript" src="/script/app.js" defer></script>
+	<?= $head->getContent(); ?>
 	<title> Playit </title>
 </head>
 <body>
-	<header>
-		<h1> Playit </h1>
-	</header>
+	<?= $header->getContent(); ?>
+
+	<?= $footer->getContent(); ?>
 </body>
 </html>

@@ -1,17 +1,24 @@
 <?php 
-// namespace App;
+namespace App\Components;
 
-
-
-class Head {
+class Head
+{
 	private $content = "
 		<link rel=\"stylesheet\" type=\"text/css\" href=\"/style/main.css\">
 		<script type=\"text/javascript\" src=\"/script/app.js\" defer></script>
 	";
 
+	private $debug_content = "
+		<link rel=\"stylesheet\" type=\"text/css\" href=\"/style/debug.css\">
+	";
+
 	public function getContent ()
 	{
-		return $content;
+		if (DEBUG) {
+			return $this->content . "\n" . $this->debug_content;
+		} else {
+			return $this->content;
+		}
 	}
 }
 

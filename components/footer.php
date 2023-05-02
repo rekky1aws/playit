@@ -1,12 +1,14 @@
 <?php 
 namespace App\Components;
 
-class Header
+class Footer
 {
 	private $content = "
-		<header>
-			<h1> Playit </h1>
-		</header>
+		<footer>
+			<p>
+				by <a href=\"https://github.com/rekky1aws\"> rekkylaws </a>
+			</p> 
+		</footer>
 	";
 
 	public function getContent ()
