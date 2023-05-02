@@ -1,3 +1,11 @@
+/* Derfining Variables */
+:root {
+	--main-color: salmon;
+	--accent-color: slateblue;
+	--bg-color: #1D1D1D;
+}
+
+/* Reset */
 * {
 	font-family: Helvetica, sans-serif;
 	padding: 0;
@@ -5,21 +13,34 @@
 }
 
 body {
-	background-color: #1D1D1D;
+	background-color: var(--bg-color);
 	color: #FFFFFF;
 }
 
 header {
-	background-color: salmon;
+	background-color: var(--main-color);
 	padding: 5px;
 	color: #000000;
 }
 
-pre {
+footer {
+	position: fixed;
+	right: 0;
+	bottom: 0;
 	padding: 5px;
-	font-family: monospace;
-	background-color: #2C2C2C;
-	margin: 15px;
-	border: 3px double #555555;
-	border-radius: 5px;
+	background-color: #888888;
+	opacity: 0.2;
+	transition: ease 0.2s;
+	color: #000000;
+	border-radius: 5px 0 0 0 ;
+}
+
+footer:hover {
+	opacity: 1;
+}
+
+footer a {
+	font-weight: bold;
+	text-decoration: none;
+	color: var(--accent-color);
 }
