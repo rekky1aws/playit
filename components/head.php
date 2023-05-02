@@ -1,11 +1,18 @@
 <?php 
-namespace App\Components\Head;
+// namespace App;
+
+
 
 class Head {
-	public function display ()
+	private $content = "
+		<link rel=\"stylesheet\" type=\"text/css\" href=\"/style/main.css\">
+		<script type=\"text/javascript\" src=\"/script/app.js\" defer></script>
+	";
+
+	public function getContent ()
 	{
-		// Todo : include main style and script
-	} 
+		return $content;
+	}
 }
 
 ?>
