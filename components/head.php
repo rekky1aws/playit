@@ -5,6 +5,7 @@ class Head
 {
 	private $content = "
 		<link rel=\"stylesheet\" type=\"text/css\" href=\"/style/main.css\">
+		<link rel=\"stylesheet\" type=\"text/css\" href=\"/style/player.css\">
 		<script type=\"text/javascript\" src=\"/script/app.js\" defer></script>
 	";
 

@@ -1,0 +1,9 @@
+.playerButton {
+	height: 30px;
+	width: 30px;
+}
+
+.playerControls {
+	display: flex;
+	gap: 15px;
+}

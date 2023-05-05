@@ -1,14 +1,15 @@
 <?php 
+namespace App\View;
 
 class PlayerControls
 {
 	private $content = "
 		<div class=\"playerControls\">
-			<button class=\"shuffle\"> </button>
-			<button class=\"previousTrack\"> </button>
-			<button class=\"playPause\"> </button>
-			<button class=\"nextTracb\"> </button>
-			<button class=\"loop\"> </button>
+			<button class=\"playerButton shuffle\"> </button>
+			<button class=\"playerButton previousTrack\"> </button>
+			<button class=\"playerButton playPause\"> </button>
+			<button class=\"playerButton nextTracb\"> </button>
+			<button class=\"playerButton loop\"> </button>
 		</div>
 	";
 

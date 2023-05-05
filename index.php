@@ -9,11 +9,12 @@ include_once("./controller/autoload.php");
 use App\Components\Head;
 use App\Components\Header;
 use App\Components\Footer;
-
+use App\View\Player;
 
 $head = new Head();
 $header = new Header();
 $footer = new Footer();
+$player = new Player();
 
 ?>
 
@@ -27,6 +28,10 @@ $footer = new Footer();
 </head>
 <body>
 	<?= $header->getContent(); ?>
+
+	<div> 
+		<?= $player->getControls(); ?>
+	</div>
 
 	<?= $footer->getContent(); ?>
 </body>

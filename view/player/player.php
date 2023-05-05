@@ -1,13 +1,16 @@
 <?php 
+namespace App\View;
+
 include_once "playerControls.php";
 
 class Player {
 
-	private $controls = new PlayerControls ();
+	private $controls;
 
 	public function getControls ()
 	{
-		return $this->controls;
+		$this->controls = new PlayerControls ();
+		return $this->controls->getContent();
 	}
 }
 
